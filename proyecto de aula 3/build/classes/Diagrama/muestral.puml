@@ -1,0 +1,38 @@
+@startuml
+
+class Estudiante{
+    private int codigo;
+    private String nombre;
+    private String gmail;
+    private String pregunta;
+    private int anoPub;
+
+}
+
+
+class Matematica{
+private boolean Solucciones;
+
+
+}
+
+
+class estadistica{
+   private int hora;
+    private int numero;
+    private String mes;
+ }
+
+Estudiante "1"-->"0--*"Matematica: calcula
+Estudiante "1" --> "0--*" estadistica: probabilidades
+
+
+
+
+
+
+
+
+
+
+@enduml
